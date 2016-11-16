@@ -1,0 +1,1 @@
+# nayoshi12.github.io
