@@ -20,137 +20,205 @@ LLLLLLLLLLLLLLLLLLLLLLLL   ooooooooooo   kkkkkkkk    kkkkkkkkkkkkkkk    kkkkkkki
                                                                                                                
                                                                                                                
                                                                                                                
---> 
+-->
 
 
 
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Nayoshi12</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="custom.css">
-  <!link rel="shortcut icon" href="https://66.media.tumblr.com/e63a6b8627e82aea2bdbbfa2d927af91/tumblr_n3ko88mnyt1s4vgzro1_500.png">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
+    <title>Nayoshi12</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="custom.css">
+    <!link rel="shortcut icon" href="https://66.media.tumblr.com/e63a6b8627e82aea2bdbbfa2d927af91/tumblr_n3ko88mnyt1s4vgzro1_500.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.85;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url("http://wallpapercave.com/wp/sCGjAUb.jpg");
-  min-height: 100%;
-}
-
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: transparent;
-  color: black;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-body,h1 {font-family: "Raleway", sans-serif}
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 50px "Lato", sans-serif;
-  color: black;
-}
-.icon-bar {
-  display: block;
-  width: 22px;
-  height: 3px;
-  background-color: midnightblue;
-  border-radius: 1px;
-}
-footer{
-        background-color: #79B68A;
-        padding: 1cm;
-}
-.mat{
-    color:darkkhaki;
-
-}
-</style>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+        
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            position: relative;
+            opacity: 0.95;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bgimg-1 {
+            min-height: 100%;
+        }
+        
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #79B68A;
+        }
+        
+        .caption span.border {
+            background-color: transparent;
+            color: black;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+        
+        body,
+        h1 {
+            font-family: "Raleway", sans-serif
+        }
+        
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 50px "Lato", sans-serif;
+            color: black;
+        }
+        
+        .icon-bar {
+            display: block;
+            width: 22px;
+            height: 3px;
+            background-color: midnightblue;
+            border-radius: 1px;
+        }
+        
+        footer {
+            background-color: #79B68A;
+            padding: 1cm;
+        }
+        
+        .mat {
+            color: darkkhaki;
+        }
+        
+        .fullscreen-bg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -100;
+        }
+        
+        .fullscreen-bg__video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        @media (min-aspect-ratio: 16/9) {
+            .fullscreen-bg__video {
+                height: 300%;
+                top: -100%;
+            }
+        }
+        
+        @media (max-aspect-ratio: 16/9) {
+            .fullscreen-bg__video {
+                width: 300%;
+                left: -100%;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .fullscreen-bg {
+                background: url('Frontier.jpg') center center / cover no-repeat;
+            }
+            .fullscreen-bg__video {
+                display: none;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<header>
-<nav class="navbar navbar navbar-fixed-top" style="font-size: 20px">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <header>
+        <nav class="navbar navbar navbar-fixed-top" style="font-size: 20px">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://www.github.com/nayoshi12" target="_blank" title="Codes of mine" data-toggle="popover" data-trigger="hover">Github</a>
-    </div>
+                    <a class="navbar-brand" href="http://www.github.com/nayoshi12" target="_blank" title="Codes of mine" data-toggle="popover"
+                        data-trigger="hover">Github</a>
+                </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav" style="color: darkkhaki;">
-        <li><a href="http://www.twitter.com/nayoshi12" title="Follow me on Twitter" data-toggle="popover" data-trigger="hover">Twitter</a></li>
-        <li><a href="https://www.facebook.com/nayoshi" target="_blank" title="Add me on FaceBook" data-toggle="popover" data-trigger="hover">FaceBook</a></li>
-        
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" style="color: darkkhaki;">
+                        <li><a href="http://www.twitter.com/nayoshi12" title="Follow me on Twitter" data-toggle="popover" data-trigger="hover">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/nayoshi" target="_blank" title="Add me on FaceBook" data-toggle="popover"
+                                data-trigger="hover">FaceBook</a></li>
 
-      </ul> 
-      
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+
+                    </ul>
+
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
 
     </header>
-<div class="bgimg-1">
-  <div class="caption">
-    <h3><span  class="border" style="font-size:35px;"><strong>Matthew Bautista</strong></span></h3>
-  </div>
-</div>
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+            <source src="Frontier.mp4" type="video/mp4"> Nah fam
+        </video>
+    </div>
+    <div class="bgimg-1">
+        <div class="caption">
+            <h3><span class="border" style="font-size:35px;"><strong>Matthew Bautista</strong></span></h3>
+        </div>
+    </div>
 
-<div style="color: #777;background-color:#79B68A;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">You only get on shot...</h3>
-  <p style="text-align:center;"></p>
+    <div style="color: #777;background-color:#79B68A;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">You only get one shot...</h3>
+        <p style="text-align:center;"></p>
 
-</div>
-<center><footer>
-   <p class="w3-medium">
-  Powered by <a href="https://irthatdude.github.io" target="_blank">N<span class="glyphicon glyphicon-record"></span>T LokkiN</a>
-  </p>
-</footer></center>
+    </div>
 
-  <!-- Latest compiled and minified JavaScript -->
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <center>
+        <footer>
+            <p class="w3-medium">
+                Powered by <a href="https://irthatdude.github.io" target="_blank">N<span class="glyphicon glyphicon-record"></span>T LokkiN</a>
+            </p>
+        </footer>
+    </center>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
 
 </body>
+
 </html>
