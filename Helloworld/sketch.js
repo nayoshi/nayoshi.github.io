@@ -1,19 +1,38 @@
-var slider;
-function setup() {
-  textSize(32);
-  createCanvas(600,600);
-  colorMode(HSB);
-  slider = createSlider(0, 360, 60, 0.01);
-  slider.position(10, 10);
-  slider.style('width', '80px');
+// Coding Rainbow
+// Daniel Shiffman
+// http://patreon.com/codingrainbow
+// Code for: https://youtu.be/0jjeOYMjmDU
 
+var angle = 0;
+var slider;
+
+function setup() {
+  createCanvas(400, 400);
+  slider = createSlider(0, TWO_PI, PI / 4, 0.01);
 }
 
 function draw() {
-  background(255, 32, 255, 1);
+  background(51);
+  angle = slider.value();
+  stroke(255);
+  translate(200, height);
+  branch(100);
 
-  var val = slider.value();
-  textSize(100);
-  fill(val,val,val);
-  text("Hello World", 0,height/2);
+}
+
+function branch(len) {
+  line(0, 0, 0, -len);
+  translate(0, -len);
+  if (len > 4) {
+    push();
+    rotate(angle);
+    branch(len * 0.67);
+    pop();
+    push();
+    rotate(-angle);
+    branch(len * 0.67);
+    pop();
+  }
+
+  //line(0, 0, 0, -len * 0.67);
 }
