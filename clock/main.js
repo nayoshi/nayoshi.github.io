@@ -16,13 +16,13 @@ function draw(){
   var rsec = random(255);
   var gsec = random(255);
   var bsec = random(255);
- background(rsec, gsec, bsec);
+ background(rsec, gsec, b);
  push();
- textSize(85);
+ textSize(315);
  stroke(0);
  strokeWeight(10);
  fill(255);
  textFont("Georgia");
- text(r + ":" + g + ":" + b,windowWidth/2,windowHeight/2);
+ text(r + ":" + g + ":" + b,width*0.2,height/2);
  pop();
 }
