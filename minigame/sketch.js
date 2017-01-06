@@ -1,6 +1,8 @@
 var circle;
 var heldL = false;
 var heldR = false;
+var heldU = false;
+var heldD = false;
 
 function setup() {
     circle = new Circle();
@@ -17,7 +19,12 @@ function draw() {
     }
     if (heldR) {
         circle.right();
-
+    }
+    if (heldU) {
+        circle.grow();
+    }
+    if (heldD) {
+        circle.shrink();
     }
 }
 
@@ -32,6 +39,12 @@ function keyPressed() {
     } else if (keyCode === RIGHT_ARROW) {
         heldR = true;
     }
+    if (keyCode === UP_ARROW) {
+        heldU = true;
+    }
+    if (keyCode === DOWN_ARROW) {
+        heldD = true;
+    }
 }
 
 function keyReleased() {
@@ -39,5 +52,9 @@ function keyReleased() {
         heldL = false;
     } else if (keyCode === RIGHT_ARROW) {
         heldR = false;
+    } else if (keyCode === UP_ARROW) {
+        heldU = false;
+    } else if (keyCode === DOWN_ARROW) {
+        heldD = false;
     }
 }
