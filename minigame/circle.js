@@ -1,14 +1,20 @@
 function Circle() {
     this.y = height / 2;
     this.x = 64;
-    this.radius
+    this.radius = 32;
     this.velocity = 0;
     this.gravity = 0.5;
     this.bounceCount = 0;
     this.reverse = false;
     this.show = function() {
         fill(255);
-        ellipse(this.x, this.y, 32, 32);
+        ellipse(this.x, this.y, this.radius, this.radius);
+    }
+    this.grow = function() {
+        this.radius += 5;
+    }
+    this.shrink = function() {
+        this.radius -= 5;
     }
     this.update = function() {
         if (this.y >= height + 4) {
@@ -29,11 +35,11 @@ function Circle() {
         } else {
             this.down();
         }
-        if (this.x <= 4) {
-            this.x = 4;
+        if (this.x <= 0) {
+            this.x = 0;
         }
-        if (this.x >= height) {
-            this.x = height;
+        if (this.x >= width) {
+            this.x = width;
         }
 
     }
