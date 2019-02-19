@@ -1,68 +1,56 @@
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-.bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            position: relative;
-            opacity: 0.95;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .bgimg-1 {
-            min-height: 100%;
-        }
-</style>
-<body>
-  <div class="w3-top">
-  <div class="w3-bar w3-green w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="http://www.github.com/nayoshi12"  class="w3-bar-item w3-button w3-padding-large">GITHUB</a>
-    <!-- <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a> -->
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">APPLICATIONS <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="Helloworld/hello.html" class="w3-bar-item w3-button">Hello World</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
+<!-- Menu -->
+<head>
+  <link rel="stylesheet" href="personal.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body background="wallhaven.png" bgproperties="fixed" style="background-size:cover">
+
+
+
+<div class="topnav">
+  <a href = "#" class="active">Home</a>
+  <a href = "mailto:mattbautista12@gmail.com?Subject:Hi%20Matthew" class="left" target="_blank">E-Mail</a>
+  <a href = "resume.pdf" class="left" target="_blank">Resume</a>
+  <a href = "https://github.com/nayoshi12" class="left"target="_blank" >Github</a>
+
+</div>
+<div class="centerpiece">
+  <div class="name">
+    <strong>Matthew Bautista</strong>
+  </div>
+  <div class="subheading">
+    Full Stack Software Developer
+  </div>
+</div>
+  <!-- Home Page -->
+
+<div class="summary">
+  <div class="tldr">
+    <h2>TL;DR</h2>
+  </div>
+  <div class="info">
+    <p>I am a full stack developer with experience of programming with server-backend or Web API calls. My background and previous projects allows me tackle wide range of problems and allows me to approach issues in pragmatic and all-encomassing way.
+</p>
     </div>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">SOCIAL MEDIA <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="http://www.twitter.com/nayoshi12" class="w3-bar-item w3-button">Twitter</a>
-        <a href="https://www.facebook.com/nayoshi" class="w3-bar-item w3-button">Facebook</a>
-        <a href="https://www.instagram.com/nayoshi12/" class="w3-bar-item w3-button">Instagram</a>
-      </div>
-    </div>
-    <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
+</div>
+
+
+<div class="footer">
+  <div class="name">
+    <h1>Matthew Bautista</h1>
+  </div>
+  <div class="email">
+    <a href="mailto:mattbautista12@gmail.com?subject=Hello Matthew">mattbautista12@gmail.com</a>
+  </div>
+  <div class="icons">
+    <p>
+      <a href="https://www.linkedin.com/in/matthew-bautista-55636212a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/nayoshi12" target="_blank"><i class="fab fa-github" ></i></a>
+      <a href="https://instagram.com/nayoshi12" target="_blank"><i class="fab fa-instagram"></i></a>
+    </p>
   </div>
 </div>
 
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large">GITHUB</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">APPLICATIONS</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">FACEBOOK</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">TWITTER</a>
-</div>
-<div class="fullscreen-bg">
-        <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-            <source src="https://www.dropbox.com/s/no4wpgrvsl03nvj/Frontier.mp4?" type="video/mp4"> Nah fam
-        </video>
-    </div>
-<div class="bgimg-1">
-    <div class="caption">
-        <h3><span class="border" style="font-size:35px;">Matthew Bautista</span></h3>
-    </div>
-</div>
-</html>
+</body>
+<!-- Footer -->
