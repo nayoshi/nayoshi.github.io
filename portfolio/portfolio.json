@@ -28,7 +28,7 @@
             "github":"https://github.com/Nayoshi12/MassMessagingBot"
         },
         {
-            "name": "<i class='fab fa-forumbee'></i>   Bee Movie Discord Bot   <i class='fab fa-forumbee'></i>",
+            "name": "🐝 Bee Movie Discord Bot 🐝",
             "description": "A silly discord bot which allows a bot to post, line by line, every single word in the Bee Movie(2007). It was mostly a test to determine which open-source website allow lenient error code paste hosting. Pastebin is the winner, allowing it to store more the 1.2k lines of dialogue and monologue.",
             "github":"https://github.com/Nayoshi12/BeeMovieDiscordBot"
         }
