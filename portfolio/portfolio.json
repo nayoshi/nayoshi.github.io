@@ -1,0 +1,36 @@
+{
+    "portfolio":[
+        {
+            "name": "UCF Parking Agent",
+            "description": "is a hackathon project created in Knight Hack hosted at University of Central Florida, Orlando. It predicts and shows what is the current number of occupancy in a certain parking garage at UCF. This was built in Dialogflow and Nodejs. This was built by Terrell Ibanez, Cole Orlando, Blake Wyatt and myself.",
+            "github":"https://github.com/Nayoshi12/UCFParkingAgent"
+        },
+        {
+            "name": "Nayoshi Github Pages",
+            "description": "My awesome website is written by myself without the use of templates or bootstraps. I created this website to challenge myself how far I can get with HTML, CSS, and JavaScript. Inspiration from Japan and Dark Florida Weather.",
+            "github":"https://github.com/Nayoshi12/nayoshi12.github.io"
+        },
+        {
+            "name": "Mythic GUI",
+            "description": "Mythic GUI is a Minecraft spigot plugin, created for the purpose of selling to the public. It was a supplement to a popular spigot plugin called Mythic Mobs. It was made to make it easier for developers/users of the plugin to summon items without typing a long winded string of commands",
+            "github":"false",
+            "message":"<a class=\"card-link\" target='__blank' href='https://www.mythicmobs.net/index.php?resources/mythicgui-mythic-items-gui.109/'>Plugin Listing</a>"
+        },
+        {
+            "name": "Christmas Cracker",
+            "description": "Christmas Cracker is a Minecraft spigot plugin. It was created to add christmas crackers in to the game. A christmas cracker is an object that resemble a peppermint, which you can pulled and there will gifts inside. It originated in England and popularized by Runescape.",
+            "github":"https://github.com/Nayoshi12/ChristmasCracker"
+        },
+        
+        {
+            "name": "Mass Messaging Discord Bot",
+            "description": "The discord bot is written in nodejs, and express and express-handlebars as the website server. The discord bot creates a website where you can select which server you want to target, and choose a role for which to ignore, and a channel where you could keep all the logs. Then you can type in a message, and then it will allow it to send a personal message (Direct Message or DM) to a person using the bot. It will do it as slowly as possible to prevent being rate-limited. It has been discontinued and disabled because of discovery of Discord TOS, and this can be considered as API-abuse.",
+            "github":"https://github.com/Nayoshi12/MassMessagingBot"
+        },
+        {
+            "name": "<i class='fab fa-forumbee'></i> Bee Movie Discord Bot <i class='fab fa-forumbee'></i>",
+            "description": "A silly discord bot which allows a bot to post, line by line, every single word in the Bee Movie(2007). It was mostly a test to determine which open-source website allow lenient error code paste hosting. Pastebin is the winner, allowing it to store more the 1.2k lines of dialogue and monologue.",
+            "github":"https://github.com/Nayoshi12/BeeMovieDiscordBot"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+.bg-darkblue{
+    background-color: #00407D;
+}
+body {
+    margin: 0;
+    font-family: 'Karla', Helvetica, sans-serif;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+  }
+.card-title{
+    font-size: 1.5em;
+    margin-bottom: -5px;
+    padding-left: 0.6em;
+    padding-top: 0.4em;
+}
+.bg-lightgrey{
+    background-color: #f2f2f2;
+}
+.summary{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.card-link{
+    text-decoration: none;
+    color: #6FB8FD;
+    padding-left: 1em;
+
+}
+.text-grey{
+    color: #FAFAFA;
+}
+.porttitle{
+    padding-top:3em;
+    padding-left:0.9em;
+    overflow:hidden;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 0.4em;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container {
+    padding: 2px 16px;
+  }
+  .topnav {
+    position: fixed;
+    width:100%;
+    overflow: hidden;
+    background-color: #00407D;
+  }
+  
+  .topnav a  {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  
+  }
+  .topnav .left{
+    float: right;
+  
+  
+  }
+  .topnav a:hover {
+    background-color: #00305D;
+    color: #f2f2f2;
+  }
+  
+  .topnav a.active {
+    background-color: #00305D;
+    color: #f2f2f2;
+  }
